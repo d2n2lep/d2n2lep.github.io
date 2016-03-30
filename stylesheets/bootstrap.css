@@ -9,7 +9,9 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
+.nav-tabs {
+    background-color:white;
+}
 body {
     margin:70px 0 70px 0;
 }
