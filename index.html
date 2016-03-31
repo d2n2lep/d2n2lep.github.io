@@ -8,9 +8,9 @@
     <meta name="keywords" content="Derby, Derbyshire, Nottingham, Nottinghamshire, Local Enterprise Partnership, LEP">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
     <link rel="shortcut icon" href="/images/d2n2-logo.png"/>
-    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/kenwheeler/slick/master/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-    <script src="https://raw.githubusercontent.com/kenwheeler/slick/master/slick/slick.js"></script>
     <script src="javascripts/bootstrap.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,16 +38,18 @@
       <div class="row-fluid">
         <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
           <script type="text/javascript">
-          $(document).ready(function(){
-            $('.multiple-items').slick({
-              infinite: true,
-              autoplay: true,
-              slidesToShow: 1
+            $(document).ready(function(){
+              $('.services').slick({
+                autoplay: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+              });
             });
-          });
           </script>
           <div class="jumbotron">
-            <div class="multiple-items">
+            <div class="services">
               <div>
                 <h2>Business Growth </h2>
                 <p>The D2N2 Growth Hub aims to power up your business, with services for enterprises operating in Derby, Derbyshire, Nottingham and Nottinghamshire. It is a gateway for businesses looking for information, guidance, support, expertise and financing; and the knowledge needed to start-up, scale up and grow their business.&nbsp;</p>
