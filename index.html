@@ -61,9 +61,10 @@
               $('.services').slick({
                 slidesToShow:1,
                 slidesToScroll:1,
-                asNavFor: '.service-nav',
                 cssEase: 'linear',
                 autoplay:true,
+                infinite:true,
+                fade:true,
                 speed:1000
               });
               $('.service-nav').slick({
@@ -75,7 +76,6 @@
                 focusOnSelect: true,
                 autoplay: true,
                 infinite: true,
-                speed: 500,
                 fade: true,
                 cssEase: 'linear'
               });
