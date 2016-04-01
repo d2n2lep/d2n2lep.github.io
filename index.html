@@ -55,23 +55,22 @@
           <h2>The Local Enterprise Partnership for Derby, Derbyshire, Nottingham and Nottinghamshire.</h2>
           <h3>Our vision is a more prosperous, better connected, and increasingly resilient and competitive economy.</h3>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
             <script type="text/javascript">
             $(document).ready(function(){
               $('.services').slick({
                 slidesToShow:1,
                 slidesToScroll:1,
-                asNavFor: '.service-nav'
+                asNavFor: '.service-nav',
+                cssEase: 'linear'
               });
               $('.service-nav').slick({
                 slidesToShow: 5,
-                slidesToScroll: 5,
+                slidesToScroll: 1,
                 asNavFor: '.services',
                 dots: true,
                 centerMode: true,
                 focusOnSelect: true,
-                draggable: true,
-                swipe: true,
                 autoplay: true,
                 infinite: true,
                 speed: 500,
