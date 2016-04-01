@@ -59,25 +59,19 @@
             <script type="text/javascript">
             $(document).ready(function(){
               $('.services').slick({
-                slidesToShow:1,
-                slidesToScroll:1,
-                cssEase: 'linear',
-                autoplay:true,
-                infinite:true,
-                fade:true,
-                speed:1000
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.service-nav'
               });
               $('.service-nav').slick({
-                slidesToShow: 5,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 asNavFor: '.services',
                 dots: true,
                 centerMode: true,
-                focusOnSelect: true,
-                autoplay: true,
-                infinite: true,
-                fade: true,
-                cssEase: 'linear'
+                focusOnSelect: true
               });
             });
           </script>
