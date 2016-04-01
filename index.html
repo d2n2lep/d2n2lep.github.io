@@ -14,7 +14,7 @@
     <script src="javascripts/bootstrap.js"></script>
     <style>
     body{
-      margin:0 70px 0 70px;
+      margin:70px 0 70px 0;
     }
       .slick-next:before,.slick-prev:before{
         color:#502262;
@@ -60,9 +60,10 @@
             $(document).ready(function(){
               $('.services').slick({
                 slidesToShow: 1,
-                slidesToScroll: 5,
+                slidesToScroll: 1,
                 arrows: true,
                 autoplay:true,
+                autoplaySpeed: 2000,
                 fade: true,
                 asNavFor: '.service-nav'
               });
