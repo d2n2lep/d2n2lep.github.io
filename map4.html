@@ -17,10 +17,11 @@
     var map;
     var layer_0;
     var layer_1;
+    var layer_2;
     function initialize() {
       map = new google.maps.Map(document.getElementById('map-canvas'), {
-        center: new google.maps.LatLng(53.18743565807369, -1.367967927832069),
-        zoom: 9,
+        center: new google.maps.LatLng(53.189691981376306, -1.3668839736937999),
+        zoom: 8,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       });
       layer_0 = new google.maps.FusionTablesLayer({
@@ -36,6 +37,15 @@
         query: {
           select: "col1",
           from: "1I5-GXo8g0hTNJ1MHSasN7WcSG0L31hwfM4YrJ4-T"
+        },
+        map: map,
+        styleId: 2,
+        templateId: 2
+      });
+      layer_2 = new google.maps.FusionTablesLayer({
+        query: {
+          select: "col6",
+          from: "1Xg2VzFawot902An85SnBe9xrWeqOL3DNE_ulp5rH"
         },
         map: map,
         styleId: 2,
